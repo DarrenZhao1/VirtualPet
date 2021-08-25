@@ -2,14 +2,14 @@ import processing.serial.*;
 import cc.arduino.*;
 Arduino arduino;
 
-public void setup(){
+void setup(){
   size(500,500);
   background(192);
   arduino = new Arduino(this, Arduino.list()[0], 57600); //change the [0] to a [1] or [2] etc. if your program doesn't work
   
 }
 
-public void draw(){
+void draw(){
   
   background(192);
   fill(255,255,255);
