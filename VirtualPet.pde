@@ -1,11 +1,6 @@
-import processing.serial.*;
-import cc.arduino.*;
-Arduino arduino;
-
 void setup(){
   size(500,500);
   background(192);
-  arduino = new Arduino(this, Arduino.list()[0], 57600); //change the [0] to a [1] or [2] etc. if your program doesn't work
   
 }
 
@@ -37,8 +32,6 @@ void draw(){
   fill(255, 165, 0);
   line(250, 185, 260, 185);
   //arms
-  int y = arduino.analogRead(5);
-    System.out.println(y);
-  line(325, 270, 400, 220+y);
-  line(175, 270, 90, 220+y);
+  line(325, 270, 400, 220);
+  line(175, 270, 90, 220);
 }
