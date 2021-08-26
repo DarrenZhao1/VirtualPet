@@ -11,7 +11,7 @@ void setup(){
 
 void draw(){
   
-  background(192);
+  background(176,196,222);
   fill(255,255,255);
   ellipse(250, 400, 200, 200); 
   fill (255,255,255);
@@ -33,9 +33,12 @@ void draw(){
 
   //nose
   fill(255, 165, 0);
-  line(250, 180, 260, 185);
-  fill(255, 165, 0);
-  line(250, 185, 260, 185);
+  triangle(250, 180, 260, 185, 250, 185);
+  
+  //hat
+  fill(135,206,250);
+  rect(200, 130, 100, 10);
+  rect(210, 110, 80, 20);
   //arms
   int y = arduino.analogRead(5);
     System.out.println(y);
